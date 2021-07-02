@@ -11,8 +11,8 @@
     "flag",
     "toggle"
   ],
-  "main": "dist/components/index.js",
-  "module": "dist/components/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
