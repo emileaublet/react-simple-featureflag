@@ -1,13 +1,24 @@
-import { FlagsContext } from "./context"; // import { useState } from "react";
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.FlagsProvider = void 0;
+
+require("core-js/modules/es.regexp.flags.js");
+
+var _context = require("./context");
+
+// import { useState } from "react";
 
 /* const dev = process.env.NODE_ENV === "development"; */
-
-export const FlagsProvider = ({
-  children,
-  flags
-}) => {
+const FlagsProvider = _ref => {
+  let {
+    children,
+    flags
+  } = _ref;
   // const [flags, setFlags] = useState(initialFlags);
-  return /*#__PURE__*/React.createElement(FlagsContext.Provider, {
+  return /*#__PURE__*/React.createElement(_context.FlagsContext.Provider, {
     value: flags
   }, children);
 };
@@ -46,3 +57,6 @@ export const FlagsProvider = ({
   );
 };
  */
+
+
+exports.FlagsProvider = FlagsProvider;
