@@ -4,6 +4,7 @@ module.exports = {
   mode: "production",
   entry: "./src/lib/index.js",
   output: {
+    globalObject: "this",
     path: path.resolve("dist"),
     filename: "index.js",
     libraryTarget: "umd",
