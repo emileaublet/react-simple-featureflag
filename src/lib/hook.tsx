@@ -7,6 +7,6 @@ export const useFlags = (flag: string): boolean => {
 
   if (!match) return false;
 
-  const { on, ...rest } = match;
-  return on ? { on, ...rest } : false;
+  const { enabled, ...rest } = match;
+  return enabled ? { enabled, ...rest } : false;
 };
