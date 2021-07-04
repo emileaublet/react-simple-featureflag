@@ -1,16 +1,20 @@
 import React from "react";
-import { FlagsContext } from "./context";
+import { ReactSimpleFlagsContext, ReactSimpleFlagsProps } from "./context";
 // import { useState } from "react";
 
 /* const dev = process.env.NODE_ENV === "development"; */
 
-export const FlagsProvider = ({ children, flags }) => {
+interface Props {
+  children: React.ReactNode;
+  flags: ReactSimpleFlagsProps;
+}
+export const ReactSimpleFlagsProvider = ({ children, flags }: Props) => {
   // const [flags, setFlags] = useState(initialFlags);
   return (
-    <FlagsContext.Provider value={flags}>
+    <ReactSimpleFlagsContext.Provider value={flags}>
       {/*{dev && <FlagsConsole flags={flags} handleChange={setFlags} />}*/}
       {children}
-    </FlagsContext.Provider>
+    </ReactSimpleFlagsContext.Provider>
   );
 };
 

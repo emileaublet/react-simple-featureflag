@@ -1,6 +1,9 @@
 import React from "react";
-interface FlagsProps {
+export interface ReactSimpleFlagProps {
   name: string;
   enabled: boolean;
 }
-export const FlagsContext = React.createContext<FlagsProps[]>([]);
+export type ReactSimpleFlagsProps = ReactSimpleFlagProps[];
+
+export const ReactSimpleFlagsContext =
+  React.createContext<ReactSimpleFlagsProps>([]);

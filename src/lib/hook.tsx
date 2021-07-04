@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { FlagsContext } from "./context";
+import { ReactSimpleFlagsContext } from "./context";
 
-export const useFlags = (flag: string): boolean => {
-  const context = useContext(FlagsContext);
+export const useReactSimpleFlags = (flag: string): boolean => {
+  const context = useContext(ReactSimpleFlagsContext);
   if (!context) return false;
 
   const match = context?.find((f) => f.name === flag);

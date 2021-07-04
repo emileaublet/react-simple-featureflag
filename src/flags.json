@@ -1,0 +1,4 @@
+[
+  { "name": "flag-a", "enabled": true },
+  { "name": "flag-b", "enabled": false }
+]

@@ -1,3 +1,3 @@
-export { FlagsProvider } from "./provider";
-export { FlagsContext } from "./context";
-export { useFlags } from "./hook";
+export { ReactSimpleFlagsProvider } from "./provider";
+export { ReactSimpleFlagsContext } from "./context";
+export { useReactSimpleFlags } from "./hook";
