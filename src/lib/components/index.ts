@@ -1,0 +1,1 @@
+export { FlagsConsole } from "./FlagsConsole";

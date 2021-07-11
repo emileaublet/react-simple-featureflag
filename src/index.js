@@ -7,7 +7,7 @@ import flags from "./flags.json";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReactSimpleFlagsProvider flags={flags}>
+    <ReactSimpleFlagsProvider initialFlags={flags}>
       <App />
     </ReactSimpleFlagsProvider>
   </React.StrictMode>,
